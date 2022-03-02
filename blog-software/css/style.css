@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header-ul{
+    height: 40px;
+    width: 400px;
+
+    position: absolute;
+    left: 90%;
+    top: 0px;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-li{
+    height: 40px;
+    width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+}
+
+.global-header{
+    height: 40px;
+    background-color: lightgrey;
+}
+
+/* registration */
+.registration-div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* login */
+.login-div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-error-div {
+    width: 270px;
+}
+
+.input-error {
+    font-size: 10px;
+    color: red;
+    width: 270px;
+}
+
+/* index */
+.index-greeting{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+/* post preview (index) */
+.post-preview {
+    width: 98vw;
+    height: 150px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+
+    background-color: lightgrey;
+}
+
+.post-preview-title {
+    position: relative;
+    width: 96vw;
+    left: 1vw;
+    top: 15px;
+
+    font-size: 22px;
+}
+
+.post-preview-text {
+    width: 96vw;
+    height: 60px;
+
+    position: relative;
+    left: 1vw;
+    top: 25px;
+
+    font-size: 14px;
+
+    overflow: hidden;
+}
+
+.post-preview-seeMore-btn {
+    width: 80px;
+    height: 20px;
+
+    position: relative;
+    left: 91vw;
+    top: 35px;
+
+}
+
+/* post */
+
+.post-full {
+    width: 96vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+
+    padding-bottom: 40px;   /*In order to compensate the post-full-text down movement (through positon relative and top: 25px) */
+
+    min-height: 100px;
+
+    border: 1px solid;
+}
+
+.post-full-title {
+    width: 94vw;
+
+    position: relative;
+    left: 1vw;
+    top: 15px;
+}
+
+.post-full-text {
+    position: relative;
+    width: 94vw;
+    left: 1vw;
+    top: 25px;
+}
+
+.back-to-index-btn {
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.post-comments-heading {
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.post-comment-add-div {
+    width: 95vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+
+    min-height: 150px;
+
+    border: 1px solid;
+}
+
+.post-comment-description {
+    width: 93vw;
+
+    position: relative;
+    left: 2vw;
+    top: 15px;
+}
+
+.comment-add-title {
+    width: 91vw;
+
+    position: relative;
+    left: 2vw;
+    top: 15px;
+}
+
+.comment-add-text {
+    width: 91vw;
+
+    position: relative;
+    left: 2vw;
+    top: 25px;
+}
+
+.comment-input-error-div {
+    position: relative;
+    left: 2vw;
+    top: 35px;
+}
+
+.comment-add-btn {
+    position: relative;
+    left: 2vw;
+    top: 35px;
+}
+
+
+
+.comment {
+    width: 95vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+
+    padding-bottom: 40px; /*In order to compensate the comment-text down movement (through positon relative and top: 25px) */
+    
+    min-height: 100px;
+
+    border: 1px solid;
+}
+
+.comment-title {
+    width: 91vw;
+
+    position: relative;
+    left: 2vw;
+    top: 15px;
+}
+
+.comment-text {
+    position: relative;
+    width: 91vw;
+    left: 2vw;
+    top: 25px;
+}
+
+/* dashboard */
+.back-to-index-btn-dashboard {
+    position: absolute;
+
+    left: 1vw;
+    top: 20px;
+
+    transform: translateY(-50%);
+}
+
+.dashboard-div {
+    display: flex;
+    min-height: 700px;
+
+    height: calc(100vh - 40px);
+}
+
+.dashboard-div-posts-column {
+    flex: 30%;
+    border-right: 1px solid;
+
+    height: 100%;
+}
+
+.dashboard-div-posts-column-addPost {
+    height: 70px;
+
+    border-bottom: 1px solid;
+    border-color: lightgrey;
+}
+
+.dashboard-div-post-column-addPost-div {
+    height: 60px;
+    width: 28vw;
+
+    margin-top: 5px;
+    margin-left: 1vw;
+}
+
+.dashboard-addPost-btn {
+    height: 60px;
+    width: 8vw;
+
+    font-size: 25px;
+}
+
+.post-full-dashboard-addPost-btn {
+    position: relative;
+    top: 19px;
+    left: 85%;
+}
+
+.post-full-dashboard-cancelAddPost-btn{
+    position: relative;
+    left: 80%;
+}
+
+.post-full-dashboard-addPost-title-input {
+    width: 100%;
+}
+
+.post-full-dashboard-addPost-text-textarea {
+    width: 100%;
+    height: 300px;
+
+    resize: none;
+}
+
+.dashboard-div-posts-column-displayPosts {
+    height: calc(100vh - 40px - 76px);
+    overflow-y: scroll;
+}
+
+.dashboard-div-currentPost-column {
+    flex: 70%;
+
+    overflow-y: scroll;
+}
+
+.dashboard-post-overview-div {
+    width: 27vw;
+    height: 150px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+
+    background-color: lightgrey;
+}
+
+.dashboard-post-overview-title {
+    position: relative;
+    width: 25vw;
+    left: 1vw;
+    top: 15px;
+
+    font-size: 22px;
+}
+
+.dashboard-post-overview-text {
+    width: 25vw;
+    height: 60px;
+
+    position: relative;
+    left: 1vw;
+    top: 25px;
+
+    font-size: 14px;
+
+    overflow: hidden;
+}
+
+.dashboard-post-overview-seeMore-btn {
+    width: 80px;
+    height: 20px;
+
+    position: relative;
+    left: 21vw;
+    top: 35px;
+}
+
+.post-full-dashboard {
+    width: 100%;
+    height: 100%;
+}
+
+.post-full-dashboard-id-div {
+    margin-left: 1vw;
+    margin-top: 1vw;
+
+    font-size: 20px;
+}
+
+.post-full-dashboard-title {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    
+    width: 90%;
+}
+
+.post-full-dashborad-input-heading {
+    font-size: 18px;
+}
+
+.post-full-dashboard-title-input {
+    width: 100%;
+}
+
+.post-full-dashboard-text {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    
+    width: 90%;
+}
+
+.post-full-dashboard-text-textarea {
+    width: 100%;
+    height: 300px;
+
+    resize: none;
+}
+
+.post-full-dashboard-safeChanges-btn {
+    position: relative;
+    top: 19px;
+    left: 83%;
+}
+
+.post-full-dashboard-cancel-btn {
+    position: relative;
+    left: 78%;
+}
+
+.post-dashboard-delete-btn {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.comment-dashboard {
+    width: 90%;
+    margin-left: 2vw;
+    margin-top: 1vw;
+
+    padding-bottom: 40px; /*In order to compensate the comment-text down movement (through positon relative and top: 25px) */
+    
+    min-height: 100px;
+
+    border: 1px solid;
+}
+
+.comment-dashboard-title {
+    width: 90%;
+
+    position: relative;
+    left: 2vw;
+    top: 15px;
+}
+
+.comment-dashboard-text {
+    position: relative;
+    width: 90%;
+    left: 2vw;
+    top: 25px;
+}
+
+.comment-dashboard-delete-btn {
+    position: relative;
+    top: -20px;
+    left: 94%;
+}
+
+.post-dashboard-delete-btn {
+    position: relative;
+    top: -20px;
+    left: 94%;
+}

@@ -1,0 +1,40 @@
+add column admin to table users
+ALTER TABLE users
+ADD COLUMN admin boolean not null AFTER pwd;
+
+posts table
+create table posts (
+	id int(32) not null PRIMARY KEY AUTO_INCREMENT,
+    title varchar(128) not null,
+    text text not null,
+    date datetime not null
+);
+
+insert data into posts
+INSERT INTO posts (title, text, date) VALUES ('A title1', 'Some Text', '2022-02-17 22:37:00');
+
+comments of post1
+CREATE TABLE post1_comments (
+    id int(32) not null PRIMARY KEY AUTO_INCREMENT,
+    title varchar(128) not null,
+    text text not null,
+    date datetime not null
+);
+
+insert data into comments of post1
+INSERT INTO post1_comments (title, text, date) VALUES ('A comment 1','Text of comment 1','2022-02-17 22:37:00');
+
+delete table post1_comments
+DROP TABLE post1_comments;
+
+comments table
+CREATE TABLE comments (
+    id int(32) not null PRIMARY KEY AUTO_INCREMENT,
+    postId int(32) not null,
+    title varchar(128) not null,
+    text text not null,
+    date datetime not null
+);
+
+insert data into comments table (for post with id 1)
+INSERT INTO comments (postId, title, text, date) VALUES ('1', 'This is the title of a comment.', 'Text of a comment', '2022-02-17 22:37:00');
